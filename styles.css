@@ -1,12 +1,32 @@
 @font-face {
-    font-family: "BlowBrush";
+    font-family: "Blow Brush";
     src: url(./fonts/blowbrush.ttf);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(./fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(./fonts/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(./fonts/CaviarDreams_Bold.ttf);
+    font-weight: bold;
 }
 
 :root {
     /* COLORS */
     --navajo-white: #ffe0ac;
     --vivid-tangerine: #ff8c8c;
+    --jet: #333333;
+    --reseda-green: #6c7d47;
+    --battleship-gray: #808f85;
 }
 
 *,
@@ -17,14 +37,104 @@
     padding: 0;
 }
 
+html{
+    background-color: var(--reseda-green);
+    min-height: 100vh;
+    position: relative;
+}
+
 header {
     background-color: var(--navajo-white);
     color: var(--vivid-tangerine);
+}
 
-    font-family: "BlowBrush", serif;
-    font-size: 2rem;
+header h1 {
+    font-family: "Blow Brush", serif;
+    font-size: 5rem;
     text-align: center;
     text-shadow: 2px 5px rgba(0, 0, 0, 0.5);
 
-    padding: 50px;
+    padding: 50px 0 30px;
+}
+
+nav {
+    font-family: "Caviar Dreams", sans-serif;
+    font-weight: bold;
+    color: var(--jet);
+    font-size: 1.5rem;
+}
+
+.line {
+    border-bottom: 3px solid var(--jet);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: var(--reseda-green);
+}
+
+main div{
+    background-color: var(--battleship-gray);
+    width: clamp(300px, 60vw, 800px);
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    font-family: "Caviar Dreams", serif;
+    font-size: 1.2rem;
+}
+
+main div p {
+    padding: 20px 50px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+main img {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid var(--navajo-white);
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px;
+    color: var(--navajo-white)
+  }
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-github {
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.fa-github:hover {
+    transform: scale(1.3);
 }
