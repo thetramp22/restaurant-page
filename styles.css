@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "BlowBrush";
+    src: url(./fonts/blowbrush.ttf);
+}
+
+:root {
+    /* COLORS */
+    --navajo-white: #ffe0ac;
+    --vivid-tangerine: #ff8c8c;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--navajo-white);
+    color: var(--vivid-tangerine);
+
+    font-family: "BlowBrush", serif;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 5px rgba(0, 0, 0, 0.5);
+
+    padding: 50px;
+}
