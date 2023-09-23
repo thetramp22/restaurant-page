@@ -57,30 +57,33 @@ header h1 {
     padding: 50px 0 30px;
 }
 
-nav {
-    font-family: "Caviar Dreams", sans-serif;
-    font-weight: bold;
-    color: var(--jet);
-    font-size: 1.5rem;
-}
-
 .line {
     border-bottom: 3px solid var(--jet);
 }
 
-nav ul {
+.button-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    gap: 40px;
 }
 
-nav li {
-    padding: 10px;
+.btn {
+    font-family: "Caviar Dreams", sans-serif;
+    font-weight: bold;
+    color: var(--jet);
+    font-size: 1.5rem;
+    padding: 20px;
+
+    background: none;
+    border: none;
+    width: 150px;
 }
 
-nav li:hover {
-    background-color: var(--reseda-green);
+.btn.active {
+    background-color: var(--vivid-tangerine);
+    color: var(--navajo-white);
 }
 
 main div{
