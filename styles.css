@@ -86,7 +86,7 @@ header h1 {
     color: var(--navajo-white);
 }
 
-main div{
+main > div{
     background-color: var(--battleship-gray);
     width: clamp(300px, 60vw, 800px);
     margin: 40px auto;
@@ -119,6 +119,27 @@ main img {
     margin: 0 auto;
     border: 3px solid var(--navajo-white);
     border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+
+    padding: 30px;
+}
+
+.grid div {
+    background-color: var(--navajo-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+}
+
+.grid img {
+    width: 300px;
 }
 
 /* FOOTER */
